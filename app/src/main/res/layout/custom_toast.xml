@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    android:id="@+id/custom_toast_layout_id"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lyt_card"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/_30sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/toast_text"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toast Text"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
